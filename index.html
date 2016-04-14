@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>New York's Curry Hill Restaurants</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+					<h4><span>Indian Restaurants in Curry Hill New York</span></h4>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
+                    <form id="search" class="nav navbar-nav navbar-form navbar-right ">
+					<div>
+                        <label>Search the list</label>
+                        <input type="text" class="form-control" placeholder="Search the list" data-bind="textInput: searchTerm, valueUpdate: 'afterkeydown'" >
+					</div>
+					</form>
+                </div>
+            </div>
+        </nav>
+
+	<div class="app" id="app">
+		<div class="list" id="list">
+			<ul class="results" id="results" data-bind="foreach: filteredList">
+				<li class="place" id="place" data-bind="text: name, click: bounce"></li>
+			</ul>
+		</div>
+		<div class="map" id="map">If you can read this, there has been an error loading Google Maps. Please Try Again.</div>
+	</div>
+
+	<script src='js/jquery-1.12.0.min.js'></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src='js/knockout-3.4.0.js'></script>
+	<script src='js/app.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=startApp&libraries=places" onerror="errorHandling()"></script>
+
+	</body>
+</html>

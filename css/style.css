@@ -1,0 +1,100 @@
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+H4 {
+	color: white;
+	font-weight:600;
+}
+
+label {
+	color: white;
+}
+
+.search {
+	width: 100%;
+	display: flex;
+}
+
+#container-fluid {
+vertical-align:middle;
+}
+
+.search-box {
+	flex-grow: 1;
+	height: 50px;
+	font-size: 1em;
+	padding: 5px 20px;
+}
+
+.app {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.list {
+	order: 1;
+	flex-grow: .25;
+	background-color: #217fa6;
+}
+
+.map {
+	order: 2;
+	flex-grow: 4.75;
+	background-color: #fff;
+	text-align: center;
+	height: 1000px;
+}
+
+
+/*#map-canvas{margin:0}#map-canvas{position:fixed;height:100vh;width:100vw}*/
+
+.results {
+	margin: 0;
+	padding: 0;
+}
+
+.place {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #fff;
+}
+
+@media only screen and (max-device-width : 959px), only screen and (max-width : 959px)  {
+
+.app {
+	flex-direction: column;
+}
+
+.search-box, .list {
+	font-size: 1.5em;
+}
+
+.navbar, .navbar-inverse {
+	border-radius: 0;
+	border: none;
+	margin-bottom: 0;
+	min-height: 80px;
+}
+
+.nav li {
+	display: inline;
+	color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #ffffff;
+	font-family: Lato;
+	font-size: 1.7em;
+	font-weight: 300;
+	padding: 30px 25px 33px 25px;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	background-color: #444444;
+	transition: 0.7s all linear;
+	height: 100%;
+}
