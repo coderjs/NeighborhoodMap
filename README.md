@@ -1,6 +1,6 @@
 # NeighborhoodMap
 
-# ${Project Name: Neighborhood Map (Project 5 for Udacity Front Developer Nanodegree)}
+# Project Name: Neighborhood Map (Project 5 for Udacity Front Developer Nanodegree)
 
 TODO: Functionally, this project is a collection of my favorite Indian Restaurants
  in my neighborbood. Murray Hill, New York is nicknamed "Curry Hill" for its high 
